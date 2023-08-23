@@ -14,7 +14,7 @@ export default async function Home() {
           className='mt-5 pb-5 pt-20 pr-5 grid gap-5 grid-cols-5'
         >
           {nowPlaying.results.map((movie) => (
-            <CardVideo id={movie.id}>
+            <CardVideo key={movie.id} id={movie.id}>
               <CardVideo.Header
                 key={movie.id}
                 imageSrc={
